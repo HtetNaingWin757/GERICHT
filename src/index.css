@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    overflow-x: hidden;
+  }
+  .d-none {
+    display : none
+  }
+  .btn:hover {
+    box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+  }
+  .video-wrapper::before {
+    content: "";
+    background-color: #00000098;
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .video video::-webkit-media-controls {
+    display: none;
+  }
+}
